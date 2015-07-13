@@ -13,8 +13,8 @@ int compare (const void * a, const void * b)
 
 int main()
 {
-    ifstream in("A-large-practice.in");
-    ofstream out("A-large-practice.out");
+    //ifstream in("A-large-practice.in");
+    //ofstream out("A-large-practice.out");
 
     int t; in>>t; int cont=1;
 
