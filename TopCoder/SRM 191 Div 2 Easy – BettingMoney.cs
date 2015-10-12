@@ -12,5 +12,4 @@ public class BettingMoney
             int loss = centsPerDollar[finalResult]*amounts[finalResult];
             return gain-loss;
         }
-
     }
