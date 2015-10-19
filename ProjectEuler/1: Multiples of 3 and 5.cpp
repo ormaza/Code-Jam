@@ -6,13 +6,11 @@
 
 using namespace std;
 
-long long sn(int d,int n)
+long long Sn(long long target,int n)
 {
-        long long np=n-1;
-        np=np-(np%d);
-        long long r=(np/d);
-        long long soma=(r*(d+np))/2;
-        return soma;
+        long long p = floor(target/n);
+        long long ans = n*(p*(p+1))/2;
+        return ans;
 }
 
 int main()
@@ -20,15 +18,12 @@ int main()
     long long teste;
     cin>>teste;
 
-    while(teste-->0)
+    while(teste--)
     {
-        long long n;
-        cin>>n;
-        long long sum=0,np;
-
-        sum = sn(3,n)+sn(5,n)-sn(15,n);
-
+        long long target;
+        cin>>target;
+        target--;
+        long long sum = Sn(target,3) + Sn(target,5) - Sn(target,15);
         cout<<sum<<endl;
-
     }
 }
