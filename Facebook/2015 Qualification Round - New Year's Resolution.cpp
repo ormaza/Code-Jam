@@ -1,15 +1,3 @@
-#include <algorithm>
-#include <cmath>
-#include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <vector>
-using namespace std;
-
 bool Verify(int p[],int c[],int f[], int n, int P,int C,int F)
 {
     if(P==0 && C==0 && F==0) return true;
