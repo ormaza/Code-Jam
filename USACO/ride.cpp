@@ -18,13 +18,8 @@ int main() {
     while(fin>>a>>b){
         for(int i=0;i<a.length();i++) sa*=((int)a[i]-64);
         for(int i=0;i<b.length();i++) sb*=((int)b[i]-64);
-
-
-        if((sa%47)==(sb%47)){
-            fout<<"GO"<<endl;
-        } else {
-            fout<<"STAY"<<endl;
-        }
+        if((sa%47)==(sb%47)) fout<<"GO"<<endl;
+        else fout<<"STAY"<<endl;
     }
     return 0;
 }
