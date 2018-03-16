@@ -1,4 +1,3 @@
-//INACABADO------------------------------<
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -11,32 +10,29 @@ using namespace std;
 class MyQueue {
   
     public:
-        stack<int> stack_d, stack_r;   
+        stack<int> stack1, stack2; 
         void push(int x) {
-            while(!stack_r.empty()){
-                int ele = stack_r.top();
-                stack_r.pop();
-                stack_d.push(ele);
-            }
-            stack_d.push(x); 
+            stack1.push(x); 
         }
 
         void pop() {
-            while(!stack_d.empty()){
-                int ele = stack_d.top();
-                stack_d.pop();
-                stack_r.push(ele);
+            if(stack2.empty()) {
+                while(!stack1.empty()) {
+                    stack2.push(stack1.top());
+                    stack1.pop();
+                }
             }
-            stack_r.pop();
+            stack2.pop();
         }
 
         int front() {
-            while(!stack_d.empty()){
-                int ele = stack_d.top();
-                stack_d.pop();
-                stack_r.push(ele);
+            if(stack2.empty()) {
+                while(!stack1.empty()) {
+                    stack2.push(stack1.top());
+                    stack1.pop();
+                }
             }
-            return stack_r.top();
+            return stack2.top();   
         }
 };
 
