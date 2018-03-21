@@ -2,8 +2,6 @@
 #include <set>
 #include <list>
 #include <cmath>
-//INACABADO
-
 #include <ctime>
 #include <deque>
 #include <queue>
@@ -22,6 +20,8 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
+
+//BRUTE FORCE
 
 using namespace std;
 
