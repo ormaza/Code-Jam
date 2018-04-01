@@ -17,7 +17,8 @@ int main(){
             kmax = max(calc,kmax);
        }
        ans = d/kmax;
-       cout<<"Case #"<<caso<<": "<<ans<<endl;
+       cout<<"Case #"<<caso<<": ";
+       printf("%.6f\n",ans);
     }
     return 0;
 }
