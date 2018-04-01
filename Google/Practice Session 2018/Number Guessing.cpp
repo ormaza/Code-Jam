@@ -23,7 +23,6 @@ int main(){
             else if(judge=="TOO_SMALL") a=x;
             else if(judge=="WRONG_ANSWER") return 0;
             else break;
-
         }
     }
     return 0;
