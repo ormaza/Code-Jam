@@ -98,7 +98,6 @@ public:
             ans.push_back(pilha2.top());
             pilha2.pop();
         }
-        //reverse(ans.begin(), ans.end());
         return ans;
     }
 };
